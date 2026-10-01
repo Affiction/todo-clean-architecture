@@ -1,4 +1,4 @@
-import { Todo, TodoNotFoundError, TodoRepository, toggleTodo } from '../../domain';
+import { Todo, TodoNotFoundError, TodoRepository, toggleTodo } from '../../../domain/todo';
 
 export class ToggleTodoUseCase {
   constructor(private readonly repository: TodoRepository) {}

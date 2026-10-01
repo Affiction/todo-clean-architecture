@@ -1,4 +1,4 @@
-import { renameTodo, Todo, TodoNotFoundError, TodoRepository } from '../../domain';
+import { renameTodo, Todo, TodoNotFoundError, TodoRepository } from '../../../domain/todo';
 
 export class RenameTodoUseCase {
   constructor(private readonly repository: TodoRepository) {}

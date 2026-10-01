@@ -1,4 +1,4 @@
-import { Todo, TodoRepository } from '../domain';
+import { Todo, TodoRepository } from '../../domain/todo';
 
 export class InMemoryTodoRepository extends TodoRepository {
   private readonly todos = new Map<string, Todo>();

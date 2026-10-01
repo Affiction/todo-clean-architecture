@@ -6,8 +6,9 @@ import {
   GetTodosUseCase,
   RenameTodoUseCase,
   ToggleTodoUseCase,
-} from '../../application';
-import { DomainError, filterTodos, Todo, TodoFilter } from '../../domain';
+} from '../../application/todo';
+import { DomainError } from '../../domain/shared/domain-error';
+import { filterTodos, Todo, TodoFilter } from '../../domain/todo';
 
 /** Signal-based view state; delegates every mutation to a use case. */
 @Injectable({ providedIn: 'root' })

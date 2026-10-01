@@ -6,8 +6,8 @@ import {
   GetTodosUseCase,
   RenameTodoUseCase,
   ToggleTodoUseCase,
-} from '../application';
-import { TodoRepository } from '../domain';
+} from '../../application/todo';
+import { TodoRepository } from '../../domain/todo';
 import { InMemoryTodoRepository } from './in-memory-todo.repository';
 
 type UseCaseClass = new (repository: TodoRepository) => unknown;

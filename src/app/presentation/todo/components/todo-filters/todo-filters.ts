@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
-import { TodoFilter } from '../../../../domain';
+import { TodoFilter } from '../../../../domain/todo';
 
 @Component({
   selector: 'app-todo-filters',

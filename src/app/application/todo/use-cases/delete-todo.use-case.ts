@@ -1,4 +1,4 @@
-import { TodoNotFoundError, TodoRepository } from '../../domain';
+import { TodoNotFoundError, TodoRepository } from '../../../domain/todo';
 
 export class DeleteTodoUseCase {
   constructor(private readonly repository: TodoRepository) {}

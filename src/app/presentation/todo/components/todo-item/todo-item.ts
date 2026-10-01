@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, output, signal } from '@angular/core';
-import { Todo } from '../../../../domain';
+import { Todo } from '../../../../domain/todo';
 
 @Component({
   selector: 'app-todo-item',

@@ -1,4 +1,4 @@
-export class DomainError extends Error {}
+import { DomainError } from '../shared/domain-error';
 
 export class EmptyTodoTitleError extends DomainError {
   constructor() {

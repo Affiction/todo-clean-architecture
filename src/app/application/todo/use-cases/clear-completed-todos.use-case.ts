@@ -1,4 +1,4 @@
-import { TodoRepository } from '../../domain';
+import { TodoRepository } from '../../../domain/todo';
 
 export class ClearCompletedTodosUseCase {
   constructor(private readonly repository: TodoRepository) {}
