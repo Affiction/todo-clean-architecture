@@ -3,8 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () =>
-      import('./presentation/todo/pages/todos-page/todos-page').then((m) => m.TodosPage),
+    loadChildren: () => import('@pages/todos').then((m) => m.TODOS_ROUTES),
   },
   { path: '**', redirectTo: '' },
 ];
