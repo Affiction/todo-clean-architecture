@@ -1,0 +1,14 @@
+@if (editing()) {
+  <form (submit)="save($event)">
+    <input name="title" [value]="todo().title" aria-label="Todo title" required />
+    <button type="submit">Save</button>
+    <button type="button" (click)="editing.set(false)">Cancel</button>
+  </form>
+} @else {
+  <label>
+    <input type="checkbox" [checked]="todo().completed" (change)="toggled.emit(todo().id)" />
+    <span [class.completed]="todo().completed">{{ todo().title }}</span>
+  </label>
+  <button type="button" (click)="editing.set(true)">Edit</button>
+  <button type="button" (click)="removed.emit(todo().id)">Delete</button>
+}

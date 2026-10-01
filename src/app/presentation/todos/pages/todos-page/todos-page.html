@@ -1,0 +1,37 @@
+<main>
+  <h1>Todos</h1>
+
+  <app-todo-form (created)="facade.add($event)" />
+
+  @if (facade.error(); as error) {
+    <p role="alert">{{ error }}</p>
+  }
+
+  <app-todo-filters [filter]="facade.filter()" (changed)="facade.setFilter($event)" />
+
+  <ul>
+    @for (todo of facade.visibleTodos(); track todo.id) {
+      <li>
+        <app-todo-item
+          [todo]="todo"
+          (toggled)="facade.toggle($event)"
+          (renamed)="facade.rename($event.id, $event.title)"
+          (removed)="facade.remove($event)"
+        />
+      </li>
+    } @empty {
+      <li>Nothing here.</li>
+    }
+  </ul>
+
+  <footer>
+    <span>{{ facade.activeCount() }} left</span>
+    <button
+      type="button"
+      [disabled]="facade.completedCount() === 0"
+      (click)="facade.clearCompleted()"
+    >
+      Clear completed
+    </button>
+  </footer>
+</main>
