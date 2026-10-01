@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component, inject, input, output, signal } from '@angular/core';
+import { Component, inject, input, output, signal } from '@angular/core';
 import { Todo, TodoStore } from '@entities/todo';
 import { DomainError } from '@shared/lib';
 import { RenameTodoUseCase } from '../model/rename-todo.use-case';
 
 @Component({
   selector: 'app-rename-todo-form',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <form (submit)="submit($event)">
       <input name="title" [value]="todo().title" aria-label="Todo title" required />

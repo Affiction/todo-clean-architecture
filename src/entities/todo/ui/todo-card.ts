@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Todo } from '../model/todo';
 
 /** Presentational view of a todo; actions are projected in by features. */
 @Component({
   selector: 'app-todo-card',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ng-content select="[todoCardStart]" />
     <span [class.completed]="todo().completed">{{ todo().title }}</span>

@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TodoStore } from '@entities/todo';
 import { ClearCompletedTodosUseCase } from '../model/clear-completed-todos.use-case';
 
 @Component({
   selector: 'app-clear-completed-todos-button',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <button type="button" [disabled]="store.completedCount() === 0" (click)="clear()">
       Clear completed

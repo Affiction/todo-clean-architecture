@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TodoStore } from '@entities/todo';
 import { ClearCompletedTodosButton } from '@features/todo/clear-completed';
 import { TodoFilters, TodoFilterStore } from '@features/todo/filter';
@@ -6,7 +6,6 @@ import { TodoListItem } from './todo-list-item';
 
 @Component({
   selector: 'app-todo-list',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [TodoFilters, TodoListItem, ClearCompletedTodosButton],
   template: `
     <app-todo-filters />

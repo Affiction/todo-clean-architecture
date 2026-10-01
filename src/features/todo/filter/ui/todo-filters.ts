@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TODO_FILTERS } from '../model/todo-filter';
 import { TodoFilterStore } from '../model/todo-filter.store';
 
 @Component({
   selector: 'app-todo-filters',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <fieldset>
       <legend>Show</legend>

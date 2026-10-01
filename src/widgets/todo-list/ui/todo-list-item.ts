@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { Todo, TodoCard } from '@entities/todo';
 import { DeleteTodoButton } from '@features/todo/delete';
 import { RenameTodoForm } from '@features/todo/rename';
@@ -6,7 +6,6 @@ import { ToggleTodoCheckbox } from '@features/todo/toggle';
 
 @Component({
   selector: 'app-todo-list-item',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [TodoCard, ToggleTodoCheckbox, RenameTodoForm, DeleteTodoButton],
   template: `
     @if (editing()) {

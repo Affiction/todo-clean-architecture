@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { Todo, TodoStore } from '@entities/todo';
 import { DeleteTodoUseCase } from '../model/delete-todo.use-case';
 
 @Component({
   selector: 'app-delete-todo-button',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<button type="button" (click)="delete()">Delete</button>`,
 })
 export class DeleteTodoButton {
