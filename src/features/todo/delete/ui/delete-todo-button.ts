@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { Todo, TodoStore } from '@entities/todo';
-import { DeleteTodoUseCase } from '../application/delete-todo.use-case';
+import { DeleteTodoUseCase } from '../model/delete-todo.use-case';
 
 @Component({
   selector: 'app-delete-todo-button',

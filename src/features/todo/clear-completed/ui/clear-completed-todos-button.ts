@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TodoStore } from '@entities/todo';
-import { ClearCompletedTodosUseCase } from '../application/clear-completed-todos.use-case';
+import { ClearCompletedTodosUseCase } from '../model/clear-completed-todos.use-case';
 
 @Component({
   selector: 'app-clear-completed-todos-button',

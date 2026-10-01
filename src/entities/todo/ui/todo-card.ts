@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { Todo } from '../domain/todo';
+import { Todo } from '../model/todo';
 
 /** Presentational view of a todo; actions are projected in by features. */
 @Component({

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { Todo, TodoStore } from '@entities/todo';
-import { ToggleTodoUseCase } from '../application/toggle-todo.use-case';
+import { ToggleTodoUseCase } from '../model/toggle-todo.use-case';
 
 @Component({
   selector: 'app-toggle-todo-checkbox',

@@ -1,2 +1,2 @@
-export * from './application/toggle-todo.use-case';
+export * from './model/toggle-todo.use-case';
 export * from './ui/toggle-todo-checkbox';

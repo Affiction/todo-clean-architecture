@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, input, output, signal } from '@angular/core';
 import { Todo, TodoStore } from '@entities/todo';
 import { DomainError } from '@shared/lib';
-import { RenameTodoUseCase } from '../application/rename-todo.use-case';
+import { RenameTodoUseCase } from '../model/rename-todo.use-case';
 
 @Component({
   selector: 'app-rename-todo-form',

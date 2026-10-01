@@ -1,6 +1,6 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
-import { Todo } from '../domain/todo';
-import { TodoRepository } from '../domain/todo.repository';
+import { Todo } from './todo';
+import { TodoRepository } from './todo.repository';
 
 /** Signal-based read model of the todo list. Features call `refresh()` after a mutation. Provided by the page route. */
 @Injectable()

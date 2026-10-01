@@ -1,2 +1,2 @@
-export * from './application/add-todo.use-case';
+export * from './model/add-todo.use-case';
 export * from './ui/add-todo-form';

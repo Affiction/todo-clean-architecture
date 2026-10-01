@@ -1,5 +1,5 @@
-import { Todo } from '../domain/todo';
-import { TodoRepository } from '../domain/todo.repository';
+import { Todo } from '../model/todo';
+import { TodoRepository } from '../model/todo.repository';
 
 export class InMemoryTodoRepository extends TodoRepository {
   private readonly todos = new Map<string, Todo>();

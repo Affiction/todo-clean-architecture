@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { TodoStore } from '@entities/todo';
 import { DomainError } from '@shared/lib';
-import { AddTodoUseCase } from '../application/add-todo.use-case';
+import { AddTodoUseCase } from '../model/add-todo.use-case';
 
 @Component({
   selector: 'app-add-todo-form',
